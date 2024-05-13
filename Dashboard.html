@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="Dashboard.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.svg" />
+
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo.svg" alt="">
+        </div>
+        <span class="menu" id="menu"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                </path>
+            </svg></span>
+        <ul>
+            <li class="bell">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9">
+                    </path>
+                </svg></li>
+            <li  class="proPic"><img style="border-radius: 100%; " class="gb_Ba gbii" src="https://lh3.googleusercontent.com/ogw/AOh-ky3wUgsaFBx-tafmpwlHVnBoEr4I4f123SoI6oKEOg=s32-c-mo" srcset="https://lh3.googleusercontent.com/ogw/AOh-ky3wUgsaFBx-tafmpwlHVnBoEr4I4f123SoI6oKEOg=s32-c-mo 1x, https://lh3.googleusercontent.com/ogw/AOh-ky3wUgsaFBx-tafmpwlHVnBoEr4I4f123SoI6oKEOg=s64-c-mo 2x " alt="" aria-hidden="true" data-noaft=""></li>
+                <img src="JS/1.jpg" alt=""></li>
+            
+                <li class="arrow" id="arrow" ><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg></li>
+            
+        </ul>
+        <!-- dropdown -->
+        <div >
+            <ul id="dotOptions">
+                <li>Profile</li>
+                <li>Signout</li>
+            </ul>
+        </div>
+        <!--  -->
+    </div>
+    <div class="sidePanel" id="sidePanel">
+        <ul class="side">
+            <li><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6">
+                    </path>
+                </svg>
+                <p id="texts">Dashboard</p>
+            </li>
+            <li><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z">
+                    </path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+                <p id="texts">Settings</p>
+            </li>
+            <li><a  href="#charts"><svg class="w-6 h-6"
+                        fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z">
+                        </path>
+                    </svg>
+                    <p id="texts">Chart</p>
+                </a>
+            </li>
+            <li><a  href="#table"><svg class="w-6 h-6"
+                        fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z">
+                        </path>
+                    </svg>
+                    <p id="texts">Table</p>
+                </a>
+            </li>
+            <li><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                </svg>
+                <p id="texts">Popups</p>
+            </li>
+            <li><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7">
+                    </path>
+                </svg>
+                <p id="texts">Map</p>
+            </li>
+            <li><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z">
+                    </path>
+                </svg>
+                <p id="texts">Errors</p>
+            </li>
+            <li><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207">
+                    </path>
+                </svg>
+                <p id="texts">Emails</p>
+            </li>
+        </ul>
+    </div>
+    <div class="main" id="main">
+        <h1>Welcome Hrushikesh</h1>
+        <p>All systems are running smoothly! You have </p>
+        <p class="coloredP">3 unread alerts!</p>
+        <img src="weather.svg" alt="">
+        <span class="sun"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
+                </path>
+            </svg>
+            <p>31c</p>
+        </span>
+        <p id="pune">Chicago</p>
+        <p id="illinois">Illinois</p>
+
+        <!-- boxes -->
+        <div class="boxes" id="popups">
+            <div id="box">
+                <p id="a">Today’s Bookings
+                    <br>
+                    <b>4006</b>
+                    <br>
+                    10.00% (30 days)
+                </p>
+            </div>
+            <div id="box">
+                <p id="b">Total Bookings
+                    <br>
+                    <b>61344</b>
+                    <br>
+                    22.00% (30 days)
+                </p>
+            </div>
+            <div id="box">
+                <p id="c">Number of Meetings
+                    <br>
+                    <b>34040</b>
+                    <br>
+                    2.00% (30 days)
+                </p>
+            </div>
+            <div id="box">
+                <p id="d">Number of Clients
+                    <br>
+                    <b>47033</b>
+                    <br>
+                    0.22% (30 days)
+                </p>
+            </div>
+        </div>
+
+        <!-- Order Card -->
+        <div class="orderDetails" id="orderDetails">
+            <h2
+                style="color: white; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; margin:10px 2pc 0 2pc; ">
+                Order Details</h2>
+            <div id="p">
+                <p> The total number of sessions within the date range. It is the period time a user is actively engaged
+                    with
+                    your website, page or app, etc</p>
+            </div>
+            <ul>
+                <li>Order value
+                    <br>
+                    <b>12.3k
+                    </b>
+                </li>
+                <li>Orders
+                    <br>
+                    <b>14k</b>
+                </li>
+                <li>Users <br><b>71.56%</b></li>
+                <li>Downloads <br><b>34040</b></li>
+
+            </ul>
+            <div class="graph1">
+                <img src="graph1.png" alt="graph1">
+            </div>
+        </div>
+
+        <!-- Sales Report -->
+        <div class="salesReport" id="salesReport">
+            <h2
+                style="color: white; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; margin:10px 2pc 0 2pc; ">
+                Sales Report</h2>
+            <div class="p">
+                <p>The total number of sessions within the date range. It is the period time a user is actively engaged
+                    with your website, page or app, etc</p>
+            </div>
+            <div class="graph2">
+                <img src="graph2.png" alt="">
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="projects" id="table">
+            <h2
+                style="color: white; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; margin:10px 2pc 0 2pc; ">
+                Projects</h2>
+            <table class="table">
+                <th>
+                    <tr>
+                        <th>Places</th>
+                        <th>Orders</th>
+                        <th>Users</th>
+                    </tr>
+                </th>
+                <tr>
+
+                    <td>Kentucky</td>
+                    <td>65(2.15%)</td>
+                    <td>65</td>
+                </tr>
+                <tr>
+                    <td>Ohio</td>
+                    <td>54(3.25%)</td>
+                    <td>51</td>
+                </tr>
+                <tr>
+                    <td>Nevada</td>
+                    <td>22(2.22%)
+
+                    </td>
+                    <td>32</td>
+                </tr>
+                <tr>
+                    <td>North Carolina
+                    </td>
+                    <td>46(3.27%)
+
+                    </td>
+                    <td>15</td>
+
+                </tr>
+                <tr>
+                    <td>Montana</td>
+                    <td>17(1.25%)
+
+                    </td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>Nevada</td>
+                    <td>52(3.11%)
+
+                    </td>
+                    <td>71</td>
+                </tr>
+                <tr>
+                    <td>Louisiana</td>
+                    <td>25(1.32%)
+
+                    </td>
+                    <td>14</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Charts -->
+        <div class="charts" id="charts">
+            <h2
+                style="color: white; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; margin:10px 2pc 0 2pc; ">
+                Charts</h2>
+            <ul>
+                <li>Data 1 <br><span class="data1"></span><span id="amt">5k</p>
+                </li>
+                <li>Data 2 <br><span class="data2"></span><span id="amt">1k</p>
+                </li>
+                <li>Data 3 <br><span class="data3"></span><span id="amt">992</p>
+                </li>
+                <li>Data 4 <br><span class="data4"></span><span id="amt">687</p>
+                </li>
+            </ul>
+
+        </div>
+
+        <!-- No. f meetings -->
+        <div class="meetings" id="meetings">
+            <h2
+                style="color: white; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; margin:10px 2pc 0 2pc; ">
+                Number of Meetings</h2>
+
+            <h1>34040</h1>
+            <p>The total number of sessions <br> within the date range. It is calculated as the sum .</p>
+            <div class=" background-icon">
+            </div>
+        </div>
+        <!-- Notifications -->
+        <div class="notification" id="notification">
+            <h2
+                style="color: white; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; margin:10px 2pc 0 2pc; ">
+                Notifications</h2>
+            <ul>
+                <li><img class="img" src="face1.jpg" alt=""></li><span><b>Isabella Becker</b>
+                    <br>Sales dashboard have been created
+                    <br>9:30 am
+
+
+
+
+                </span>
+                <li><img class="img" src="face2.jpg" alt=""></li><span><b>Adam Warren</b>
+
+                    <br>You have done a great job #TW111
+                    <br>10:30 am
+
+
+                </span>
+                <li><img class="img" src="face3.jpg" alt=""></li><span><b>Leonard Thornton
+
+                    </b> <br> Sales dashboard have been created
+                    <br>11:30 am
+
+
+                </span>
+                <li><img class="img" src="face4.jpg" alt=""></li><span><b>George Morrison
+
+                    </b> <br> Sales dashboard have been created
+                    <br>8:50 am
+
+                </span>
+            </ul>
+        </div>
+
+    </div>
+
+
+
+    <script src="Dashboard.js"></script>
+</body>
+
+</html>
